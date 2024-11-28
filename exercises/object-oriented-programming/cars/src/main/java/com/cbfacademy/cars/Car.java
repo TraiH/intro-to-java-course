@@ -28,8 +28,8 @@ public int getYear(){
 public String getColour(){
     return colour;
 };
-public void setColour(String colour){
-   this.colour = colour; 
+public void setColour(String newColour){
+ colour = newColour; 
 }
 public String getDetails(){
   return make + ", " + model + ", " + year + ", " + colour;  
