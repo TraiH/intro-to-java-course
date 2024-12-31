@@ -1,11 +1,20 @@
 package com.cbfacademy.shapes;
 
 public abstract class Shape {
-   public abstract double getArea();
+   
+public double area;
+public String name;
 
-   public String name;
+public Shape (String name, double area){
+    this.name = name;
+    this.area = area;
+    }
   
-   String getName(){
+   public String getName(){
     return name;
-    }; 
+    }
+
+   public double getArea(){
+    return area;
+    }
 }

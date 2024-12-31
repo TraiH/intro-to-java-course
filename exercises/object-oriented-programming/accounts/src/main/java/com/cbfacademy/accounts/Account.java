@@ -3,9 +3,10 @@ package com.cbfacademy.accounts;
 public class Account {
         private int accountNumber;
         public double balance;
+        public double requested;
   
                 
-            public Account(int accountNumber, double balance){
+            public Account(int accountNumber, double balance, double requested){
                
                 this.accountNumber = accountNumber; 
                 this.balance = balance;
