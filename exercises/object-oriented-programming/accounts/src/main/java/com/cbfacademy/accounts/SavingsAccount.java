@@ -5,10 +5,11 @@ package com.cbfacademy.accounts;
 public class SavingsAccount extends Account {
     public double interestRate; // Interest rate for savings account
 
+
     // Constructor for SavingsAccount
-    public SavingsAccount(int accountNumber, double balance, double interestRate) {
+    public SavingsAccount(int accountNumber, double balance, double interestRate, double requested) {
         // Call the parent constructor to set account number and balance
-        super(accountNumber, balance);
+        super(accountNumber, balance, requested);
         this.interestRate = interestRate;
     }
     

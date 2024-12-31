@@ -24,15 +24,17 @@ public class CurrentAccount extends Account{
     }
     
     @Override
-    public double withdraw(double requested) {
-        double overdraftLimitPlusBalance = this.balance + overdraftLimit;
-        if (requested <= overdraftLimitPlusBalance){
-            return requested;
-
-        } else (requested > overdraftLimitPlusBalance) {
-            return 0;
-        }
+        public double withdraw(double requested) {
+            double overdraftLimitPlusBalance;
+                        if (requested > balance) {
+                            return 0;
+                        } else if (requested > overdraftLimitPlusBalance) {
+                return 0;
+            } else {
+                balance -= requested;
+                return 0;
     }
+}
 }
 
 

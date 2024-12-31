@@ -7,9 +7,9 @@ public class Account {
   
                 
             public Account(int accountNumber, double balance, double requested){
-               
                 this.accountNumber = accountNumber; 
                 this.balance = balance;
+                this.requested = requested;
             
     }
        
