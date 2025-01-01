@@ -1,9 +1,18 @@
 package com.cbfacademy.shapes;
 
 public class Rectangle extends Shape {
-
-    Rectangle(double length, double width) 
+    public double length;
+    public double width;
     
-    double getArea(length * width) 
+            public Rectangle (double length, double width){
+                super("Rectangle");
+                this.width = width;
+                this.length = length;
+                
+        }
+        @Override
+            public double getArea(){
+            return (this.length * this.width);
+            }    
     
 }
