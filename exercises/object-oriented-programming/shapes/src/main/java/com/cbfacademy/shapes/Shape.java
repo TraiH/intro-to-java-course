@@ -7,6 +7,10 @@ public Shape (String name){
     this.name = name;
     }
 
+    public Shape (){
+        this("");
+    }
+
 public String getName(){
     return name;
     }
