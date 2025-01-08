@@ -5,7 +5,7 @@ public class DiceGame implements Game{
     private Player player2;
     private int targetScore = 30;
 
-    public DiceGame() {
+    public DiceGame(String Player1, String Player2) {
         player1 = PlayerFactory.create();
         player2 = PlayerFactory.create();
         player1.setName("Player 1");
