@@ -1,6 +1,8 @@
 package com.cbfacademy;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -95,7 +97,7 @@ public class FlowControlExercises {
             case 12:
                 return "December";
         }
-                return null;
+        return null;
     }
 
     public Map<String, Integer> sumOfOddsAndSumOfEvens() {
@@ -105,15 +107,43 @@ public class FlowControlExercises {
         // - determines the sum of all the odd numbers in the list
         // - returns a map with two entries:
         // {"SumOfEvens", calculatedSumOfEvens}, {"SumOfOdds", calculatedSumOfOdds}
-        throw new RuntimeException("Not implemented");
+        // throw new RuntimeException("Not implemented");
+        List<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i <= 100; i++) {
+            numbers.add(i);
+        }
+
+        // Step 2: Initialize variables to hold the sums
+        int sumOfEvens = 0;
+        int sumOfOdds = 0;
+
+        // Step 3: Calculate sums of even and odd numbers
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                sumOfEvens += number;
+            } else {
+                sumOfOdds += number;
+            }
+        }
+
+        // Step 4: Create a map to store the results
+        Map<String, Integer> result = new HashMap<>();
+        result.put("SumOfEvens", sumOfEvens);
+        result.put("SumOfOdds", sumOfOdds);
+
+        // Step 5: Return the map
+        return result;
     }
 
     public List<Integer> reverse(ArrayList<Integer> numbers) {
         // TODO - Implement this method such that
         // - it takes an array list of integers
         // - it returns the list in reverse order
-        throw new RuntimeException("Not implemented");
-
+        // throw new RuntimeException("Not implemented");
+        ArrayList<Integer> list = new ArrayList<>(numbers);
+            Collections.reverse(list);
+            return list;
+        
     }
 
     public String getName() {
