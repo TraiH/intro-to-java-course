@@ -14,14 +14,38 @@ public class FlowControlExercises {
         //  - if the ${element} is divisible by both 3 and 5, it adds “FizzBuzz” to the list
         //  - it adds the element to the list in any other case
         //  - it returns the constructed list
-        throw new RuntimeException("Not implemented");
+        //  throw new RuntimeException("Not implemented");
+        
+        //% is modulo 
+        List <String> fizz = new ArrayList<>();
+        for(Integer number : numbers) {
+    
+            if (number % 3 == 0 && number % 5 == 0){
+                fizz.add("FizzBuzz");
+            } else if (number % 3 == 0) {
+                fizz.add("Fizz");
+            } else if (number % 5 == 0) {
+                fizz.add("Buzz");
+            } else {
+                fizz.add(number.toString());
+            }
+            
+        }
+        return fizz;
     }
 
     public String whichMonth(Integer number) {
         // TODO - Implement this method such that
         //  - it returns the month corresponding to the input ${number}
         //  - if the ${number} is invalid, the method should return "Invalid month number"
-        throw new RuntimeException("Not implemented");
+        // throw new RuntimeException("Not implemented");
+
+        switch (number){
+            case 1:
+                return "January";
+
+        }
+      
     }
 
     public Map<String, Integer> sumOfOddsAndSumOfEvens() {
