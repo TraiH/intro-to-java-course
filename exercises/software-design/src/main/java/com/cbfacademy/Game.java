@@ -7,6 +7,6 @@ public interface Game {
     /**
      * Plays the game.
      * @return A string representing the winner of the game.
-     */
+     */ 
     String play();
 }
